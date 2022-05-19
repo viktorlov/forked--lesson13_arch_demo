@@ -13,6 +13,6 @@ def page_vacancies():
 
 @vacancies_blueprint.route('/vacancies/<int:pk>')
 def page_vacancy(pk):
-    vacancy = vacancies_dao.get_by_pk(1)
+    vacancy = vacancies_dao.get_by_pk(pk)
     return render_template("vacancies_single.html", vacancy=vacancy)
 
