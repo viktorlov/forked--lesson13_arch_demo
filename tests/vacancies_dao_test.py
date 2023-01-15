@@ -17,7 +17,7 @@ class TestVacanciesDAO:
         """ Проверяем получение всех вакансий"""
         vacancies = vacancies_dao.get_all()
         assert type(vacancies) == list
-        assert len (vacancies) > 0
+        assert len(vacancies) > 0
         assert set(vacancies[0].keys()) == keys_should_be
 
 
